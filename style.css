@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 1.5rem 2rem;
+    column-gap: 2rem;
+    background-color: #56616d;
+}
+
+#color-picker {
+    background-color: #2f3540;
+    display: flex;
+    column-gap: 1rem;
+    padding: 1rem;
+}
+
+.col {
+    padding: 1rem;
+    border-radius: 20%;
+    border: none;
+}
+
+input[type=radio] {
+    visibility: hidden;
+}
+
+#mode {
+    background-color: #2f3540;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+i {
+    padding: 1rem;
+    font-size: 2rem;
+    color: white;
+}
+
+.tickets {
+    margin-top: 1rem;
+    height: 60vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 2rem;
+}
+
+.ticket {
+    width: 22%;
+    border: 1px solid black;
+    height: 14rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.col-b {
+    height: 8%;
+    width: 100%;
+    background-color: black;
+}
+
+.id-b {
+    height: 15%;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 15px;
+    align-items: center;
+}
+
+.text-b {
+    background-color: blanchedalmond;
+    height: 100%;
+    padding-top: 0.5rem;
+    text-align: center;
+}
+
+.add-window {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2rem solid gray;
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+}
+
+.col-sel {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.colours {
+    padding: 1rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 1rem;
+}

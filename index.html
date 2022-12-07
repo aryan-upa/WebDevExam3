@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ticket Application</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/5a010fa73c.js" crossorigin="anonymous"></script>
+</head>
+<body id="body">
+
+	<nav id="nav">
+		<div id="color-picker">
+			<button class="col" style="background-color: red" id="red-c"></button>
+			<button class="col" style="background-color: blue" id="blue-c"></button>
+			<button class="col" style="background-color: green" id="green-c"></button>
+			<button class="col" style="background-color: black" id="black-c"></button>
+		</div>
+		<div id="mode">
+			<label for="add"><i class="fa-solid fa-plus"></i><input type="radio" id="add" name="option" checked></label>
+			<label for="del"><i class="fa-solid fa-trash"></i><input type="radio" id="del" name="option"></label>
+		</div>
+	</nav>
+
+	<div class="tickets">
+		<div class="ticket">
+			<div class="col-b"></div>
+			<div class="id-b"><b>#ALKNALK</b></div>
+			<div class="text-b">this is some text</div>
+		</div>
+	</div>
+
+	<div class="add-window" id="add-window">
+		<div class="text">
+			<textarea name="tick-text" id="tick-text" cols="30" rows="10"></textarea>
+		</div>
+		<div class="col-sel">
+			<div class="colours">
+				<button class="col" id="col-r" style="background-color: red" value="red"></button>
+				<button class="col" id="col-b" style="background-color: blue" value="blue"></button>
+				<button class="col" id="col-g" style="background-color: green" value="green"></button>
+				<button class="col" id="col-p" style="background-color: pink" value="pink"></button>
+			</div>
+		</div>
+	</div>
+
+	<script src="main.js"></script>
+</body>
+</html>
