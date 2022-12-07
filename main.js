@@ -14,7 +14,7 @@ document.getElementById('black-c').addEventListener('click', () => {
     document.getElementById('nav').style.backgroundColor = 'black';
 })
 
-const items = localStorage.getItem('items');
+const items = [];
 
 function createItem(text, bg) {
     const ne = document.createElement('div');
@@ -28,13 +28,16 @@ function createItem(text, bg) {
 }
 
 document.getElementById('add').addEventListener('click', () => {
-    document.getElementById('add-window').style.visibility = revert;
-    document.getElementById('col-g').addEventListener('click', () => {
-        let ticket = createItem(document.getElementById('tick-text'), 'green');
-        
-        items.push(ticket);
-    })
+    document.getElementById('add-window').style.visibility = 'visible';
+});
+
+document.getElementById('col-r').addEventListener('click', () => {
+    let ticket = createItem(document.getElementById('tick-text'), 'red');
+    document.getElementById('tickets').appendChild(ticket);
+    items.push(ticket);
+    document.getElementById('add-window').style.visibility = 'hidden';
 })
+
 
 
 
